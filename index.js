@@ -8,7 +8,7 @@
 
 var walk = require('walk');
 var path = require('path');
-var extend = require('extend');
+
 var files = [];
 
 var loggerFn = function(str) {
