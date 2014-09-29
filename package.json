@@ -1,14 +1,18 @@
 {
-  "name": "express-nexus",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "walk": "^2.3.3"
-  }
+    "name": "express-nexus",
+    "version": "0.1.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xxvvii/express-nexus.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "walk": "^2.3.3"
+    }
 }
