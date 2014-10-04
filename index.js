@@ -87,7 +87,7 @@ function applyRouteGroup(router, routes, key) {
 /**
  * @param router
  */
-exports.route = function(router) {
+exports.route = function(dir, router) {
     // Walker options
     var base = 'routes';
     var walker = walk.walk(base, { followLinks: false });
@@ -116,7 +116,7 @@ exports.route = function(router) {
     walker.on('end', function() {
         files.forEach(function(file) {
             Object.keys(file).forEach(function(key) {
-                var routes = require("../" + file[key]);
+                var routes = require(dir + '/' + file[key]);
 
                 if (routes) {
                     applyRouteGroup(router, routes, key);
