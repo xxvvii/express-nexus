@@ -98,7 +98,6 @@ exports.route = function(dir, router) {
             basename = path.basename(stat.name, extname);
 
         if (extname === '.js') {
-            var endpoint = basename === 'index' ? '' : basename;
             var parent = path.relative(base, root);
 
             var obj = {};
@@ -107,7 +106,7 @@ exports.route = function(dir, router) {
                 parent = '/' + parent;
             }
 
-            obj[parent + endpoint] = root + '/' + basename;
+            obj[parent] = root + '/' + basename;
             files.push(obj);
         }
         next();

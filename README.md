@@ -1,10 +1,10 @@
-express-nexus
-=============
+#express-nexus
+
 
 A route module for express
 
-# Samples
-## Basic routing
+## Samples
+### Basic routing
 ```
 module.exports = {
     '/': {
